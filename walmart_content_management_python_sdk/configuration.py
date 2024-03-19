@@ -114,7 +114,7 @@ conf = walmart_content_management_python_sdk.Configuration(
                  ):
         """Constructor
         """
-        self.host = "http://localhost" if host is None else host
+        self.host = "https://marketplace.walmartapis.com/v3/feeds" if host is None else host
         """Default Base url
         """
         self.server_index = 0 if server_index is None and host is None else server_index
@@ -402,7 +402,7 @@ conf = walmart_content_management_python_sdk.Configuration(
         """
         return [
             {
-                'url': "",
+                'url': "https://marketplace.walmartapis.com/v3/feeds",
                 'description': "No description provided",
             }
         ]
